@@ -1,0 +1,19 @@
+<h3>Create a new post<h3>
+
+
+<%= form_with model: @posts do |form| %>
+
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <br />
+  <br />
+  <%= form.label :status %>
+  <%= form.text_field :status %>
+  <br />
+  <br />
+  <%= form.submit "Add post" %>
+
+<% end %>
+<p>
+  <%= link_to 'Home', posts_path %>
+</p>
